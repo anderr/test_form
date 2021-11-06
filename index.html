@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exam</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#A55" />
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link media="all" rel="stylesheet" href="css/style.css">
+	<!-- <link media="all" rel="stylesheet" href="css/smoke.css"> -->
+</head>
+<body>
+	<div class="popup" id="modal">
+		<div class="popup__bg"></div>
+		<div class="popup__body">
+			<div class="popup__close">
+	      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 22 22">
+	        <path d="M1284.83,179L1306,200.17l-0.83.826L1284,179.829Zm21.17,0.826L1284.83,201l-0.83-.826L1305.17,179Z" transform="translate(-1284 -179)"/>
+	      </svg>
+	    </div>
+
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas magnam deleniti inventore eligendi ipsum modi culpa nesciunt, necessitatibus perferendis minus dolor, possimus perspiciatis. Maiores quaerat blanditiis debitis tempore error vero hic fugiat ad reiciendis praesentium quos quod rem, amet eaque ex asperiores molestias earum dolorem nulla unde nihil. Iure, ea quae illum officiis fuga hic reprehenderit ab doloribus recusandae iusto, omnis? Officiis, adipisci maxime laborum voluptate, recusandae alias commodi porro quaerat ex mollitia in, atque sit a dolorum, earum impedit esse neque et aspernatur eos illo ipsam nulla. Debitis, quam maxime hic, facere adipisci corporis! Error explicabo perferendis ipsum quibusdam!</span>
+		</div>
+	</div>
+
+	<div class="page">
+		<div class="page__body">
+			<div class="header">
+				<div class="container">
+					<div class="header__logo">
+						<div class="header__logo-left"></div>
+						<div class="header__logo-right"></div>
+					</div>
+
+					<div class="header__text">
+						Онлайн-заявка на получение<br />
+						микрозайма <strong>с повышенной<br />
+						вероятностью одобрения</strong>
+					</div>
+				</div>
+
+				<div class="header__logo2">
+					<strong>zaim</strong>
+					<i></i>
+					test
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="form__success">
+					<span>✓</span>
+					<br />
+					<br />
+					Заявка отправлена.
+					<br />
+					<br />
+					Ждите ответа от МФО.
+				</div>
+				<div class="form active">
+					<div class="form__header">
+						Вы заполняете заявку на получение микрозайма.<br />
+						Заявка будет обработана МФО [ White&Blue Cigarette }.
+					</div>
+					<ul class="form__steps">
+						<li class="active">
+							<span class="span-step1">Личные данные</span>
+						</li>
+						<li class="">
+							<span class="span-step2">Паспорт</span>
+						</li>
+						<li>
+							<span class="span-step3">Адрес</span>
+						</li>
+						<li>
+							<span class="span-step4">Контакты</span>
+						</li>
+					</ul>
+					<div class="form__steps-container">
+						<div class="form__steps-container-in" data-step="1">
+							<!-- step1 -->
+							<form action="" class="form-step1 form__step" id="step1">
+								<div class="form-group col-3">
+									<label for="">Фамилия</label>
+									<input type="text" name="" placeholder="Константин" id="surname">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-3">
+									<label for="">Имя</label>
+									<input type="text" name="" placeholder="Иванов" id="name">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-3">
+									<label for="">Отчество</label>
+									<input type="text" name="" placeholder="Константинович" id="otch">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-3">
+									<label for="">Дата рождения</label>
+									<input type="date" name="" value="1999-12-31" id="date">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-3">
+									<label for="">СНИЛС</label>
+									<input type="text" name="" placeholder="000-000-000-00" class="snils" data-mask="qqq-qqq-qqq-qq" id="snils">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-3">
+									<label for="">Город проживания</label>
+									<input type="text" name="" placeholder="Санкт-Петербург" id="city">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+							</form>
+							<!-- step2 -->
+							<form id="step2" class="form-step2 form__step">
+								<div class="form-group col-15">
+									<label for="">Серия</label>
+									<input type="text" name="" placeholder="00 00" class="number" data-mask="qq qq">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-15">
+									<label for="">Номер</label>
+									<input type="text" name="" placeholder="000000" class="series" data-mask="qqqqq?q">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-3">
+									<label for="">Дата выдачи</label>
+									<input type="date" name="" value="1999-12-31">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-3">
+									<label for="">Место рождения</label>
+									<input type="text" name="" placeholder="Санкт-Петербург">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-35">
+									<label for="">Код подразделения</label>
+									<input type="text" name="" placeholder="000-000" class="kod" data-mask="qqq-qqq">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-6">
+									<label for="">Кем выдан</label>
+									<input type="text" name="" placeholder="Отделение ОУФМС Московкой области">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+							</form>
+							<!-- step3 -->
+							<form id="step3" class="form-step3 form__step">
+								<div class="form-group col-35">
+									<label for="">Регион регистрации</label>
+									<input type="text" name="" placeholder="Московская область">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-6">
+									<label for="">Город регистрации</label>
+									<input type="text" name="" placeholder="Армань">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-6">
+									<label for="">Улица регистрации</label>
+									<input type="text" name="" placeholder="Армань">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-15">
+									<label for="">Дом</label>
+									<input type="text" name="" placeholder="1">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-15">
+									<label for="">Квартира</label>
+									<input type="text" name="" placeholder="11">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+							</form>
+							<!-- step4 -->
+							<form id="step4" class="form-step4 form__step">
+								<div class="form-group col-3">
+									<label for="">Телефон</label>
+									<input type="text" name="" placeholder="+7 (000) 000-00-00" class="phone" data-mask="+7 (qqq) qqq-qq-qq">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+
+								<div class="form-group col-6">
+									<label for="">Электронный адрес</label>
+									<input type="text" name="" placeholder="email@mailbox.ru">
+									<div class="help-block"></div>
+									<div class="error-block"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form__footer">
+						<div class="form__footer-text footer1">
+							Внимательно заполните все поля.<br />
+							Предоставленные вами сведения могут использоваться при оформлении документов.
+						</div>
+						<div class="form__footer-text footer2 is-hide">
+							<div class="checkbox checkbox__big">
+								<input id="check1" type="checkbox" name="" value="" checked>
+								<label for="check1"><span>Автоматически увеличить шанс на одобрение заявки,</span> получив ответ от нескольких МФО.</label>
+							</div>
+
+							<div class="disclaimer">
+								<div class="disclaimer__header">
+									Повысьте вероятность <strong>быстрого получения выгодного займа!</strong>
+								</div>
+								<div class="disclaimer__body">
+									Как это работает:<br /><br />
+									Вы подаете единую заявку на заем, рассматриваете предложения от нескольких МФО, выбираете наиболее выгодное — и получаете деньги в удобной форме.
+								</div>
+								<a href="#" id="upgrade">
+									Повысить шанс
+								</a>
+							</div>
+
+							<div class="form__footer-checkbox">
+								<div class="checkbox is-m0">
+									<input id="check2" type="checkbox" name="" value="" checked>
+									<label for="check2"><i>Мы не можем отправить вашу заявку, пока вы не дадите согласие передать свои личные данные на обработку.<br /></i>Отправляя форму, я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в <a href="http://google.com" class="rules popup_open" data-modal="#modal">Согласии на обработку персональных данных</a></label>
+								</div>
+								<button type="button" name="button" class="btn orange" id="btn_final">
+									Продолжить
+								</button>
+							</div>
+						</div>
+						<div class="form__footer-button">
+							<button type="button" name="button" class="btn first">
+								Продолжить
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="page__footer footer">
+				<div class="container">
+					<div class="footer__copyright">
+						© 2018 zaim-test.com
+					</div>
+					<a href="" class="footer__privacy rules popup_open" data-modal="#modal">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- <script src="js/smoke.min.js"></script> -->
+	<!-- <script src="js/ru.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic');
+
+@import 'normalize';
+
+@import 'modules/popup';
+@import 'modules/header';
+@import 'modules/inputs';
+@import 'modules/form';
+@import 'modules/footer';
+
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	font-family: 'Ubuntu';
+}
+
+.container {
+	max-width: 650px;
+	padding: 0 20px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	&__body {
+		flex: 1 0 auto;
+	}
+	&__footer {
+		flex: 0 0 auto;
+	}
+}
+
+.is-hide {
+	display: none;
+}
+.is-m0 {
+	margin: 0;
+}

@@ -1,0 +1,155 @@
+.header {
+  background: #11a4cb;
+  width: 100%;
+  padding: 2.5em 1em;
+  overflow: hidden;
+  position: relative;
+  z-index: -2;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 12px;
+    background: #11a4cb;
+  }
+
+  .container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  // logo left
+  &__logo {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 20px;
+    margin-right: 60px;
+  }
+  &__logo-left {
+    width: 3.25em;
+    height: 1.4375em;
+    background: #FFF;
+    margin-right: .31em;
+    position: relative;
+
+    &:before {
+      content: "[";
+      color: #005b6b;
+      font-size: 3em;
+      font-weight: 700;
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      transform: translateY(-56%);
+    }
+  }
+  &__logo-right {
+    width: 7em;
+    height: 1.4375em;
+    background-color: #005b6b;
+    position: relative;
+
+    &:after {
+      content: "}";
+      color: #005b6b;
+      font-size: 3em;
+      font-weight: 700;
+      position: absolute;
+      top: 50%;
+      right: -20px;
+      transform: translateY(-55%);
+    }
+  }
+
+  // text
+  &__text {
+    background: #FFF;
+    height: 100%;
+    font-size: 1.25em;
+    padding: 0 0 0 3.125em;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 300%;
+      background: #FFF;
+      width: 800%;
+      z-index: -1;
+    }
+  }
+
+  // logo2
+  &__logo2 {
+    position: absolute;
+    top: 2.5em;
+    right: 2em;
+    color: #000;
+    z-index: 100;
+    cursor: pointer;
+    transition: color .5s ease;
+
+    i {
+      display: inline-block;
+      width: 3px;
+      height: 3px;
+      background: #000;
+      vertical-align: top;
+      margin-top: 7px;
+      margin-left: -2px;
+    }
+
+    &:hover {
+      color: #11a4cb;
+      transition: color .5s ease;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    font-size: .8em;
+  }
+}
+@media (max-width: 650px) {
+  .header {
+    padding: 2em .5em 1.5em;
+    margin-top: 35px;
+    overflow: visible;
+
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__logo {
+      margin-bottom: 2em;
+    }
+    &__text {
+      padding: 0;
+      padding-left: 5px;
+      color: #FFF;
+      background: none;
+      font-size: 12px;
+      text-align: left;
+
+      &:before {
+        display: none;
+      }
+    }
+    &__logo2 {
+      top: -25px;
+    }
+  }
+}
